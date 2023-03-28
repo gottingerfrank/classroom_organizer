@@ -27,12 +27,12 @@ for item in classroom_organizer:
     print(item)
 
 # print student combinations:
-print("\n----------------- print student combinations -----------------\n")
+print("\n----------------- print student combinations: 2 per Table -----------------\n")
 for c in classroom_organizer.get_combinations():
     print(c)
 
 # get list of all 4 combinations of students favoring Maths or Science
-print("\n---------- print Math/Science student combinations ----------\n")
+print("\n---------- print Math/Science student combinations: 4 per Table ----------\n")
 
 science_students = classroom_organizer.get_students_with_subject('Science')
 

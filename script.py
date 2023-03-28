@@ -9,6 +9,8 @@ from classroom_organizer import ClassroomOrganizer
 student_roster_iter = iter(student_roster)
 
 # print out each student dict in student_roster iterator using next()
+print("\n--------- next() thru iterator object, print each item ---------\n")
+
 try:
   while True:
     print(next(student_roster_iter))
@@ -19,6 +21,13 @@ except StopIteration:
 # test ClassroomOrganizer iterator object
 classroom_organizer = ClassroomOrganizer()
 
+print("\n--------- print student names from iterator object ---------\n")
+
 for item in classroom_organizer:
   print(item)
 
+
+# print student combinations:
+print("\n--------- print student combinations ---------\n")
+for c in classroom_organizer.get_combinations():
+  print(c)

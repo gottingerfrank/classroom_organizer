@@ -37,6 +37,3 @@ class ClassroomOrganizer:
     def get_combinations(self):
         combinations = itertools.combinations(self.sorted_names, 2)
         return combinations
-
-
-
